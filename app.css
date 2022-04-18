@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+}
+a {
+  text-decoration: none;
+}
+.nav-link {
+  display: flex;
+  padding: 16px;
+}
+.nav-link-top a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 20px;
+}
+
+#landing {
+  margin: 0 10px;
+  padding: 60px;
+}
+#landing h3 {
+ font-size: 28px;
+ padding: 10px 0 
+}
+#landing h1 {
+ font-size: 40px;
+ padding: 10px 0 
+}
+#summit {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  width: 50%;
+  padding: 20px;
+}
+#period {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 20px 0;
+}
+#program {
+  background-color: rgb(90, 84, 84);
+  height: 100vh;
+}
+/* program */
+#program {
+  padding: 50px;
+  
+}
+#program h1 {
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+.program-cards {
+  display: flex;
+}
+.prog-card {
+   display: flex;
+   flex-direction: column;
+   width: 20vw;
+   height: 40vh;
+   border: 1px solid #fff;
+   text-align: center;
+   margin: 2px;
+}
+.prog-card-top {
+  padding: 10px;
+}
+.prog-card-top h3 {
+  color: orangered;
+}
+.prog-card-bottom {
+  color: #fff;
+  text-align: center;
+}
+.prog-card-bottom p {
+  text-align: center;
+  padding-top: 10px;
+}
+.whole-prog {
+    text-align: center;
+    padding-top: 50px;
+}
+.whole-prog a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+/* SPEAKERS */
+#speakers h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+.speakers-wrap {
+    display: flex;
+    padding: 40px;
+}
+.speaker {
+    display: flex;
+}
+.spk-image img{
+    width: 15vw;
+    height: 30vh;
+    object-fit: cover;
+}
+.spk-info {
+    padding: 0 10px;
+    width: 100%;
+}
+.info-red {
+    color: rgb(216, 40, 40);
+    font-style: italic;
+    padding-bottom: 10px;
+}
+/* partner */
+#partner {
+    text-align: center;
+    height: 50vh;
+    background-color: #000;
+    color: #fff;
+}
+#partner h2 {
+    padding: 30px 0;
+}
+#partner ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    list-style: none;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
