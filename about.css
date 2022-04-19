@@ -53,9 +53,10 @@ body {
  font-size: 18px;
  padding: 20px 0;
  color: #ec5242;
+ text-align: center;
 }
 #landing h1 {
-  font-size: 40px;
+  font-size: 32px;
   padding: 10px 0;
   font-weight: 900;
   line-height: 55px;
@@ -63,20 +64,41 @@ body {
   background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url("./assets/ctf.jpg");
   color: transparent;
   -webkit-background-clip: text;
+  text-align: center;
 }
 #summit {
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
 #period {
-  font-weight: 700;
-  font-size: 24px;
   padding: 30px 0;
+  text-align: center;
 }
 #copyr {
     padding-bottom: 50px;
+}
+/* competition */
+.competition-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.competition-card{
+    width: 100%;
+    height: 360px;
+}
+.competition-card img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.competition-card h2,p{
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+    /* color: #fff; */
 }
 
 /* program */
@@ -256,7 +278,7 @@ footer {
 #summit {
   padding: 20px;
   font-size: 16px;
-  width: 50%;
+  width: 100%;
 }
 #period {
   font-weight: 900;
