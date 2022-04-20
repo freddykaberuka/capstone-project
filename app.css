@@ -26,7 +26,7 @@ body {
     position: fixed;
     font-size: 32px;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     line-height: 80px;
     width: 100%;
     padding: 0 20px;
@@ -242,6 +242,23 @@ footer {
     padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
+  .top-bar {
+    background-color: #000;
+    color: #fff;
+  }
+  .top-bar ul {
+    display: flex;
+    padding: 10px;
+    justify-content: end;
+  }
+  .top-bar ul li{
+    display: flex;
+    padding-left: 10px;
+    justify-content: end;
+  }
+  .fa-facebook-f, .fa-twitter{
+    padding-top: 3px;
+  }
  #landing {
   padding: 50px;
 }

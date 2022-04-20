@@ -40,7 +40,7 @@ body {
     color: #fff;
 }
 
-#landing-main {
+#landing-main, #community {
   background-image: url('./assets/Website-background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,6 +80,32 @@ body {
 #copyr {
     padding-bottom: 50px;
 }
+/* community */
+#community {
+  padding: 10px;
+  text-align: center;
+}
+.c-header, .c-header2 {
+   font-size: 42px;
+  padding: 10px 0;
+  font-weight: 900;
+  line-height: 55px;
+  font-family: lato;
+  background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url("./assets/2020.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  text-align: center; 
+}
+.c-paragraph{
+    font-size: 28px;
+    padding: 10px 20px;
+    text-align: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
 /* competition */
 .competition-wrap {
     display: flex;
@@ -87,18 +113,43 @@ body {
 }
 .competition-card{
     width: 100%;
-    height: 360px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 .competition-card img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    position: absolute;
+    position: relative;
+  cursor: pointer;
+}
+.sumit-desc {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 82, 66, 0.7);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transition: 0.9s ease-in-out;
+  cursor: pointer;
 }
 .competition-card h2,p{
     text-align: center;
-    position: relative;
     padding-top: 40px;
-    /* color: #fff; */
+}
+.year {
+    color: #fff;
+    font-size: 40px;
+}
+.c-name {
+    color: #fff;
+    font-size: 20px;
+}
+.competition-card:hover > .sumit-desc {
+  transform: translateY(100%);
 }
 
 /* program */
@@ -203,11 +254,11 @@ body {
   height: 2px;
   background-color:rgb(165, 161, 161);
 }
-.line-red {
-  margin: 10px 250px;
-  height: 2px;
+/* .line-red {
+  margin: 10px 170px;
+  height: 0.5;
   background-color:rgb(216, 40, 40);
-}
+} */
 
 .spk-info {
     padding: 0 10px;
@@ -264,6 +315,23 @@ footer {
     padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
+   .top-bar {
+    background-color: #000;
+    color: #fff;
+  }
+  .top-bar ul {
+    display: flex;
+    padding: 10px;
+    justify-content: end;
+  }
+  .top-bar ul li{
+    display: flex;
+    padding-left: 10px;
+    justify-content: end;
+  }
+  .fa-facebook-f, .fa-twitter{
+    padding-top: 3px;
+  }
  #landing {
   padding: 50px;
 }
@@ -357,6 +425,19 @@ a {
   text-decoration: none;
   color: #000;
   padding-left: 20px;
+}
+.competition-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.competition-card{
+    width: 40%;
+    margin: 30px;
+}
+.competition-card img{
+    width: 100%;
+    height: 100%;
 }
 
 }
