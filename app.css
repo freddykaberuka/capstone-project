@@ -9,7 +9,9 @@ body {
   font-family: 'Lato', sans-serif;;
 }
 /* header */
-
+.top-bar {
+    display: none;
+  }
 #hamburger {
     padding: 10px;
     font-size: 40px;
@@ -26,7 +28,7 @@ body {
     position: fixed;
     font-size: 32px;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     line-height: 80px;
     width: 100%;
     padding: 0 20px;
@@ -156,6 +158,8 @@ body {
 .speaker-wrap{
     display: flex;
     flex-direction: column;
+    height: 60vh;
+    overflow: hidden;
 }
 .images {
   width: 180px;
@@ -200,6 +204,14 @@ body {
     font-size: 16px;
     font-weight: 700;
     margin-top: 30px;
+    cursor: pointer;
+}
+.btn-spk:active {
+    background-color: #ec5242;
+    color: #fff;
+}
+#lessspk {
+  display: none;
 }
 .fa-chevron-down {
     color:rgb(216, 40, 40);
@@ -242,13 +254,22 @@ footer {
     padding: 0 20px;
 }
 @media screen and (min-width: 768px) {
+  /* #hamburger {
+    display: none;
+  } */
+.nav-link{
+  display: none;
+}
+
   .top-bar {
+    display: block;
     background-color: #000;
     color: #fff;
   }
   .top-bar ul {
     display: flex;
     padding: 10px;
+    padding-right: 70px;
     justify-content: end;
   }
   .top-bar ul li{
