@@ -15,6 +15,10 @@ body {
   display: none;
 }
 
+.logo {
+  display: none;
+}
+
 #hamburger {
   padding: 10px;
   font-size: 40px;
@@ -55,6 +59,12 @@ body {
 #landing {
   margin: 0;
   padding: 20px;
+}
+
+.prog-card-top h3 {
+  color: #ec5242;
+  justify-content: center;
+  padding-top: 40px;
 }
 
 #landing h3 {
@@ -129,12 +139,6 @@ body {
   padding: 30px 10px;
 }
 
-.prog-card-top h3 {
-  color: #ec5242;
-  justify-content: center;
-  padding-top: 40px;
-}
-
 .prog-card-bottom {
   padding: 10px;
   width: 100%;
@@ -153,11 +157,9 @@ body {
 }
 
 .btn {
-  background-color: #fff;
   color: #fff;
   border: 1px solid #000;
   padding: 30px;
-  font-size: 16px;
   font-weight: 700;
   margin: 10px;
   background-color: #ec5242;
@@ -229,7 +231,6 @@ body {
   padding: 20px;
   background-color: #fff;
   border: 1px solid #000;
-  padding: 20px;
   font-size: 16px;
   font-weight: 700;
   margin-top: 30px;
@@ -293,11 +294,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  /* #hamburger {
+  #hamburger {
     display: none;
-  } */
-  .nav-link {
-    display: none;
+  }
+
+  .logo {
+    display: block;
+    padding-top: 30px;
   }
 
   .top-bar {
@@ -429,10 +432,26 @@ footer {
     text-decoration: none;
   }
 
-  /* .nav-link {
+  .links-container {
+    display: block;
+  }
+
+  .nav-link {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: static;
+    background-color: transparent;
     display: flex;
-    padding: 16px;
-  } */
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 80px;
+    width: 100%;
+    padding: 0 20px;
+  }
 
   .nav-link-top a {
     text-decoration: none;
