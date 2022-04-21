@@ -363,8 +363,22 @@ footer {
 .copright {
   padding: 0 20px;
 }
+.top-bar {
+  display: none;
+}
+.logo {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    padding-top: 30px;
+  }
   .top-bar {
     background-color: #000;
     color: #fff;
@@ -491,9 +505,32 @@ footer {
     text-decoration: none;
   }
 
+  .links-container {
+    display: block;
+  }
+
   .nav-link {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: static;
+    background-color: transparent;
     display: flex;
-    padding: 16px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 80px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #close {
+    display: none;
+  }
+  .fa-times {
+    display: none;
   }
 
   .nav-link-top a {

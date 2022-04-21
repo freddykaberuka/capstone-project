@@ -453,6 +453,14 @@ footer {
     padding: 0 20px;
   }
 
+  #close {
+    display: none;
+  }
+  
+  .fa-times {
+    display: none;
+  }
+
   .nav-link-top a {
     text-decoration: none;
     color: #000;
