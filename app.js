@@ -57,8 +57,11 @@ const speakers = [
 ];
 
 const speakerData = () => {
-  const data = speakers.map((el) => `
-      <div class="speaker-card">
+  // eslint-disable-next-line array-callback-return
+  const items = speakers.map((el) => {
+    const div = document.createElement('div');
+    div.classList = 'speaker-card';
+    div.innerHTML = `
         <div class="images">
           <img src="${el.p_image}">
         </div>
@@ -72,9 +75,9 @@ const speakerData = () => {
             <p> ${el.p_history}</p>
           </div>
         </div>
-      </div>
-      `);
-  speaker.innerHTML = data;
+      </div>`;
+    const res = speaker.appendChild(div);
+  });
 };
 if (showMore) {
   showMore.addEventListener('click', () => {
