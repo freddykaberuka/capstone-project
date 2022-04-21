@@ -166,6 +166,11 @@ body {
   font-size: 20px;
 }
 
+.btn:hover {
+  background-color: #fff;
+  color: #ec5242;
+}
+
 /* SPEAKERS */
 #speakers {
   margin: 10px;
@@ -456,7 +461,7 @@ footer {
   #close {
     display: none;
   }
-  
+
   .fa-times {
     display: none;
   }

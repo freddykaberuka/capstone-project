@@ -117,7 +117,6 @@ body {
   -moz-box-shadow: 0 0 3px #ccc;
   -webkit-box-shadow: 0 0 3px #ccc;
   box-shadow: 0 0 3px #ccc;
-  padding: 10px;
   background-color: #fff;
 }
 
@@ -246,6 +245,12 @@ p {
   margin: 10px;
   background-color: #ec5242;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ec5242;
 }
 
 /* SPEAKERS */
@@ -363,9 +368,11 @@ footer {
 .copright {
   padding: 0 20px;
 }
+
 .top-bar {
   display: none;
 }
+
 .logo {
   display: none;
 }
@@ -379,14 +386,17 @@ footer {
     display: block;
     padding-top: 30px;
   }
+
   .top-bar {
     background-color: #000;
     color: #fff;
+    display: block;
   }
 
   .top-bar ul {
     display: flex;
     padding: 10px;
+    padding-right: 70px;
     justify-content: end;
   }
 
@@ -469,11 +479,12 @@ footer {
     column-gap: 20px;
   }
 
-  .line-red {
-    margin: 10px 650px;
-    height: 2px;
+  /* .line-red {
+    margin: 10px;
+    width: 30px;
+    height: 1px;
     background-color: rgb(216, 40, 40);
-  }
+  } */
 
   .btn-spk {
     display: none;
@@ -529,6 +540,7 @@ footer {
   #close {
     display: none;
   }
+
   .fa-times {
     display: none;
   }
