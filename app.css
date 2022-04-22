@@ -160,7 +160,6 @@ body {
   color: #fff;
   border: 1px solid #000;
   padding: 30px;
-  font-weight: 700;
   margin: 10px;
   background-color: #ec5242;
   font-size: 20px;
@@ -173,7 +172,8 @@ body {
 
 /* SPEAKERS */
 #speakers {
-  margin: 10px;
+  margin: 30px;
+  justify-content: center;
 }
 
 #speakers h2 {
@@ -311,6 +311,11 @@ footer {
     display: none;
   }
 
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
   .header-info img {
     width: 90px;
     object-fit: cover;
@@ -379,9 +384,14 @@ footer {
     padding: 30px 0;
   }
 
+  #program {
+    min-height: 90vh;
+  }
+
   .program-cards {
     display: flex;
     flex-direction: row;
+    margin: 60px;
   }
 
   .prog-card {
@@ -404,12 +414,28 @@ footer {
   }
 
   .btn {
-    width: 50%;
     margin: 0;
+    color: #fff;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  .btn:hover {
+    background-color: transparent;
+  }
+
+  #speaker {
+    padding-right: 100px;
+    padding-left: 100px;
+    justify-content: center;
   }
 
   .speaker-wrap {
     width: 100%;
+    justify-content: center;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
