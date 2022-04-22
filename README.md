@@ -1,6 +1,8 @@
 # Global CTF Competition Summit
 
  This is a website that publish the ctf competition summit for the global Community
+ ![CTF Summit (1)](https://user-images.githubusercontent.com/26603127/164704299-9f998c68-1f49-4969-976c-3da7b1216bf7.png)
+
 
  ### Built With
 
