@@ -620,4 +620,8 @@ footer {
     display: flex;
     justify-content: center;
   }
+
+  .copright {
+    padding-top: 10px;
+  }
 }

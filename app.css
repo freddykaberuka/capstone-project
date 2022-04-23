@@ -428,8 +428,8 @@ footer {
   }
 
   #speaker {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 230px;
+    padding-left: 230px;
     justify-content: center;
   }
 
@@ -517,5 +517,9 @@ footer {
     text-decoration: none;
     color: #000;
     padding-left: 20px;
+  }
+
+  .copright {
+    padding-top: 20px;
   }
 }
